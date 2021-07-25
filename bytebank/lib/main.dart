@@ -52,7 +52,7 @@ class FormularioTransferencia extends StatelessWidget {
                 keyboardType: TextInputType.number,
               ),
             ),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Confirmar'),
               onPressed: () {
                 debugPrint('clicou no confirmar');
