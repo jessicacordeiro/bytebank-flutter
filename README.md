@@ -19,6 +19,8 @@
   - [x] Criação do Layout para o formulário
   - [x] Aplicação de margem em Widgets
   - [x] Estilização do TextField
+  - [x] Implementação do Elevated Button
+  - [x] Implementação da KeyboardType number
   - [x] Refatoração do Widget para receber argumentos opcionais nomeados
   - [x] Navegação entre páginas por meio do Navigator
   - [x] Recebimento de informações ao realizar o pop durante a navegação 
