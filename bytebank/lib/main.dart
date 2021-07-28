@@ -13,9 +13,11 @@ class BytebankApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.orange[800],
         accentColor: Colors.blue[900],
-        buttonTheme: ButtonThemeData(
-          buttonColor: Colors.deepOrange,
-        )
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: TextButton.styleFrom(
+            backgroundColor: Colors.blue[900],
+          )
+        ),
       ),
       home: ListaTransferencias(),
     );
