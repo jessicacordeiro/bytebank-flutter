@@ -16,7 +16,7 @@
   - [x] Organização e Reutilização de códigos no Flutter
   - [x] Maneiras de evitar Widgets inesperados para outras telas
   - [x] Implementação do Hot Reload
-  - [x] Criação do Layout para formulário
+  - [x] Criação do Layout para o formulário
   - [x] Aplicação de margem em Widgets
   - [x] Estilização do TextField
   - [x] Refatoração do Widget para receber argumentos opcionais nomeados
