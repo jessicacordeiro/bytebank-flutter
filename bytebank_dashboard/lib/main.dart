@@ -1,5 +1,3 @@
-import 'package:bytebank_dashboard/screens/contacts_form.dart';
-import 'package:bytebank_dashboard/screens/contacts_list.dart';
 import 'package:bytebank_dashboard/screens/dashboard.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +14,7 @@ class BytebankDashboardApp extends StatelessWidget {
           backgroundColor: Colors.indigo[900],
         )),
       ),
-      home: ContactForm(),
+      home: Dashboard(),
     );
   }
 }
