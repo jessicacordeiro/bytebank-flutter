@@ -10,27 +10,55 @@ class BytebankDashboardApp extends StatelessWidget {
         primaryColor: Colors.orange[800],
         elevatedButtonTheme: ElevatedButtonThemeData(
             style: TextButton.styleFrom(
-          backgroundColor: Colors.blue[900],
+          backgroundColor: Colors.indigo[900],
         )),
       ),
-      home: Scaffold(
-          appBar: AppBar(
-            title: Text('ByteBank'),
-          ),
-          body: Column(children: <Widget>[
-            Image.asset('images/logo-people.png'),
-            Container(
-              height: 120,
-              width: 100,
-              color: Colors.blue[900],
-              child: Column(
-                children: <Widget>[
-                  Icon(Icons.people), 
-                  Text('Contatos')
-                ],
-              ),
-            )
-          ])),
+      home: Dashboard(),
     );
+  }
+}
+
+class Dashboard extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: Text('ByteBank'),
+        ),
+        body: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Image.asset('images/logo-people.png'),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  padding: EdgeInsets.all(8.0),
+                  height: 120,
+                  width: 150,
+                  color: Colors.indigo[900],
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      Icon(
+                        Icons.people,
+                        color: Colors.white,
+                        size: 60.0,
+                      ),
+                      Text(
+                        'Contatos',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20.0,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              )
+            ]
+          )
+        );
   }
 }
