@@ -22,7 +22,7 @@ class _ContactsListState extends State<ContactsList> {
       ),
       body: FutureBuilder<List<Contact>>(
         initialData: [],
-        future: findAll(),
+        future: findAll,
         builder: (context, snapshot) {
           switch (snapshot.connectionState) {
             case ConnectionState.none:
