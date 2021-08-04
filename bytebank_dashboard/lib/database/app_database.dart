@@ -17,14 +17,12 @@ Future<Database> createDatabase() {
 Future<int> save(Contact contact) {
   return createDatabase().then((db) {
     final Map<String, dynamic> contactMap = Map();
-    contactMap['id'] = contact.id;
     contactMap['nome'] = contact.nome;
     contactMap['numero_conta'] = contact.numeroConta;
     return db.insert('contacts', contactMap);
   });
 }
 
-//salvar contatos em uma lista 
 Future<List<Contact>> findAll() {
   return createDatabase().then((db) {
     return db.query('contacts').then((maps) {
