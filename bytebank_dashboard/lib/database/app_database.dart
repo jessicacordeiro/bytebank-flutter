@@ -24,6 +24,7 @@ Future<int> save(Contact contact) {
   });
 }
 
+//salvar contatos em uma lista 
 Future<List<Contact>> findAll() {
   return createDatabase().then((db) {
     return db.query('contacts').then((maps) {
