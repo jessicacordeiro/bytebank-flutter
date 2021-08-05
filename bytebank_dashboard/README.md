@@ -10,4 +10,7 @@
   - [x] Apresentar a lista dinamicamente com o FutureBuilder
   - [x] Lidar com os problemas comuns do FutureBuilder
   - [x] Implementar a apresentação de conteúdo visual apropriadamente
-  - [x] Criar um Widget para indicar progresso.
+  - [x] Criar um Widget para indicar progresso
+  - [x] Salvar dados no banco de dados por meio de um formulário
+  - [x] Utilizar o async await
+  - [x] Implementar o padrão de projeto DAO
