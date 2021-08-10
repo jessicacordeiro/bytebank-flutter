@@ -16,7 +16,7 @@ class _ContactsListState extends State<ContactsList> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Contatos',
+          'Transferir',
           style: TextStyle(
             fontSize: 30.0,
           ),
