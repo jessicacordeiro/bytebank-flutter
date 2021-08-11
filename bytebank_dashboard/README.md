@@ -3,6 +3,7 @@
 ## 📚 O que foi aplicado na parte de Persistência com Flutter - Crie um app com armazenamento interno: 
 
   - [x] Adicionar imagens via rede ou assets
+  - [x] Adicionar as dependências do sqflite para criar um banco de dados
   - [x] Alinhamento dos filhos do Widget Column
   - [x] Adicionar eventos em containers que não contém propriedades de eventos
   - [x] Manter o comportamento esperado de clique no Material Design
