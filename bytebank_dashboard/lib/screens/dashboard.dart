@@ -19,10 +19,11 @@ class Dashboard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Image.asset('images/logo-people.png'),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
+              Container(
+                height: 120,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
                     _FeatureItem(
                       'Transferir',
                       Icons.monetization_on,
@@ -76,7 +77,6 @@ class _FeatureItem extends StatelessWidget {
           onTap: () => onClick(),
           child: Container(
             padding: EdgeInsets.all(8.0),
-            height: 120,
             width: 150,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
