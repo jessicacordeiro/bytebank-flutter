@@ -1,3 +1,4 @@
+import 'package:bytebank_dashboard/models/transactions_list.dart';
 import 'package:bytebank_dashboard/screens/contacts_list.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -27,23 +28,12 @@ class Dashboard extends StatelessWidget {
                     _FeatureItem(
                       'Transferir',
                       Icons.monetization_on,
-                      onClick: () {
-                        _showContactList(context);
-                      },
+                      onClick: () => _showContactList(context),
                     ),
                     _FeatureItem(
                       'Tranferências Realizadas',
                       Icons.description,
-                      onClick: () {
-                        print('transferer feed clicked');
-                      },
-                    ),
-                    _FeatureItem(
-                      'Tranferências Realizadas',
-                      Icons.description,
-                      onClick: () {
-                        print('transferer feed clicked');
-                      },
+                      onClick: () => _showTransactionsList(context),
                     ),
                   ],
                 ),
@@ -56,6 +46,14 @@ void _showContactList(BuildContext context) {
   Navigator.of(context).push(
     MaterialPageRoute(
       builder: (context) => ContactsList(),
+    ),
+  );
+}
+
+_showTransactionsList(BuildContext context) {
+  Navigator.of(context).push(
+    MaterialPageRoute(
+      builder: (context) => TransactionsList(),
     ),
   );
 }
