@@ -19,27 +19,52 @@ class Dashboard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Image.asset('images/logo-people.png'),
-              Row(
-                children: [
-                  _FeatureItem(
-                    'Transferir',
-                    Icons.monetization_on,
-                  ),
-                  _FeatureItem(
-                    'Tranferências Realizadas',
-                    Icons.description,
-                  ),
-                ],
-              ),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    _FeatureItem(
+                      'Transferir',
+                      Icons.monetization_on,
+                      onClick: () {
+                        _showContactList(context);
+                      },
+                    ),
+                    _FeatureItem(
+                      'Tranferências Realizadas',
+                      Icons.description,
+                      onClick: () {
+                        print('transferer feed clicked');
+                      },
+                    ),
+                    _FeatureItem(
+                      'Tranferências Realizadas',
+                      Icons.description,
+                      onClick: () {
+                        print('transferer feed clicked');
+                      },
+                    ),
+                  ],
+                ),
+              )
             ]));
   }
+}
+
+void _showContactList(BuildContext context) {
+  Navigator.of(context).push(
+    MaterialPageRoute(
+      builder: (context) => ContactsList(),
+    ),
+  );
 }
 
 class _FeatureItem extends StatelessWidget {
   final String name;
   final IconData icon;
+  final Function onClick;
 
-  _FeatureItem(this.name, this.icon);
+  _FeatureItem(this.name, this.icon, {required this.onClick});
 
   @override
   Widget build(BuildContext context) {
@@ -48,11 +73,7 @@ class _FeatureItem extends StatelessWidget {
       child: Material(
         color: Colors.indigo[900],
         child: InkWell(
-          onTap: () {
-            Navigator.of(context).push(
-              MaterialPageRoute(builder: (context) => ContactsList()),
-            );
-          },
+          onTap: () => onClick(),
           child: Container(
             padding: EdgeInsets.all(8.0),
             height: 120,
