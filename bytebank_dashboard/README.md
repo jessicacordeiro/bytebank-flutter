@@ -1,6 +1,6 @@
 # DASHBOARD 
 
-## 📚 O que foi aplicado: 
+## 📚 O que foi aplicado na parte de Persistência com Flutter - Crie um app com armazenamento interno: 
 
   - [x] Adicionar imagens via rede ou assets
   - [x] Alinhamento dos filhos do Widget Column
@@ -14,3 +14,10 @@
   - [x] Salvar dados no banco de dados por meio de um formulário
   - [x] Utilizar o async await
   - [x] Implementar o padrão de projeto DAO
+
+
+## 📚 O que foi aplicado na parte de Flutter com web API - integrando sua app mobile: 
+
+  - [x] A utilizar o row para estruturar Widgets no modo horizontal 
+  - [x] COmo utilizar funções de callback para delegar comportamentos de eventos
+  - [x] Como indicar que o argumento é obrigatório mesmo sendo opcional
