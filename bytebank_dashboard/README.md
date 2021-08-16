@@ -20,5 +20,10 @@
 ## 📚 O que foi aplicado na parte de Flutter com web API - integrando sua app mobile: 
 
   - [x] A utilizar o row para estruturar Widgets no modo horizontal 
-  - [x] COmo utilizar funções de callback para delegar comportamentos de eventos
+  - [x] Como utilizar funções de callback para delegar comportamentos de eventos
   - [x] Como indicar que o argumento é obrigatório mesmo sendo opcional
+  - [x] Executar uma web API do Spring Boot 
+  - [x] Testar a web API com o Postman
+  - [x] Configurar e usar o package http do Dart
+  - [x] Realizar uma requisição GET do http no Flutter
+  
