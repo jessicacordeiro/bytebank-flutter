@@ -26,4 +26,7 @@
   - [x] Testar a web API com o Postman
   - [x] Configurar e usar o package http do Dart
   - [x] Realizar uma requisição GET do http no Flutter
+  - [x] Converter json para objeto do Dart
+  - [x] Apresentar dados da web api com o FutureBuilder
+  - [x] Exibir um feedback adequado para situações excepcionais
   
