@@ -31,10 +31,11 @@ Future<List<Transaction>> findAll() async {
     LoggingInterceptor(),
   ]);
   final Response response =
-      await get(Uri.http('192.168.15.18:8080', 'transactions'));
-  final List<dynamic> decodeJson = jsonDecode(response.body);
+      await get(Uri.http('192.168.15.18:8080', 'transactions'))
+          .timeout(Duration(seconds: 5));
+  final List<dynamic> decodedJson = jsonDecode(response.body);
   final List<Transaction> transactions = [];
-  for (Map<String, dynamic> transactionJson in decodeJson) {
+  for (Map<String, dynamic> transactionJson in decodedJson) {
     final Map<String, dynamic> contactJson = transactionJson['contact'];
     final Transaction transaction = Transaction(transactionJson['value'],
         Contact(0, contactJson['name'], contactJson['accountNumber']));
