@@ -25,6 +25,7 @@ class CenteredMessage extends StatelessWidget {
               icon,
               size: iconSize,
             ),
+            // ignore: unnecessary_null_comparison
             visible: icon != null,
           ),
           Padding(
