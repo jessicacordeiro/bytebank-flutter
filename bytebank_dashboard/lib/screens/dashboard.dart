@@ -1,4 +1,4 @@
-import 'package:bytebank_dashboard/models/transactions_list.dart';
+import 'package:bytebank_dashboard/screens/transactions_list.dart';
 import 'package:bytebank_dashboard/screens/contacts_list.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
