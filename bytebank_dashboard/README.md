@@ -29,4 +29,7 @@
   - [x] Converter json para objeto do Dart
   - [x] Apresentar dados da web api com o FutureBuilder
   - [x] Exibir um feedback adequado para situações excepcionais
+  - [x] Implementar a requisição post para o HTTP
+  - [x] Salvar uma transferência na web api
+  - [x] Converter objeto Dart para JSON
   
