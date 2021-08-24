@@ -29,7 +29,10 @@
   - [x] Converter json para objeto do Dart
   - [x] Apresentar dados da web api com o FutureBuilder
   - [x] Exibir um feedback adequado para situações excepcionais
-  - [x] Implementar a requisição post para o HTTP
+  - [x] Implementar a requisição POST para o HTTP
   - [x] Salvar uma transferência na web api
   - [x] Converter objeto Dart para JSON
+  - [x] Organizar o código do web client
+  - [x] Simplificar a conversão entre objetos e JSON
+  - [x] Utilizar a função map() para converter uma lista
   
