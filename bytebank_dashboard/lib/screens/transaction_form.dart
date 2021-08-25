@@ -20,7 +20,7 @@ class _TransactionFormState extends State<TransactionForm> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('New transaction'),
+        title: Text('Nova Transferência'),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -49,7 +49,7 @@ class _TransactionFormState extends State<TransactionForm> {
                 child: TextField(
                   controller: _valueController,
                   style: TextStyle(fontSize: 24.0),
-                  decoration: InputDecoration(labelText: 'Value'),
+                  decoration: InputDecoration(labelText: 'Valor'),
                   keyboardType: TextInputType.numberWithOptions(decimal: true),
                 ),
               ),
@@ -58,7 +58,7 @@ class _TransactionFormState extends State<TransactionForm> {
                 child: SizedBox(
                   width: double.maxFinite,
                   child: ElevatedButton(
-                    child: Text('Transfer'),
+                    child: Text('Transferir'),
                     onPressed: () {
                       final double? value =
                           double.tryParse(_valueController.text);
