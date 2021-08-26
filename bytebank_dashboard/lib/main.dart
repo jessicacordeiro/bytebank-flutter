@@ -17,7 +17,7 @@ class BytebankDashboardApp extends StatelessWidget {
           backgroundColor: Colors.indigo[900],
         )),
       ),
-      home: TransactionAuthDialog(),
+      home: Dashboard(),
     );
   }
 }
