@@ -87,12 +87,13 @@ class _TransactionFormState extends State<TransactionForm> {
 
   void _save(Transaction transactionCreated, String password,
       BuildContext context) async {
-    await Future.delayed(Duration(seconds: 1));
     _webClient.save(transactionCreated, password).then((transaction) {
       // ignore: unnecessary_null_comparison
       if (transaction != null) {
         Navigator.pop(context);
       }
+    }).catchError((e) {
+      print(e);
     });
   }
 }
