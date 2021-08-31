@@ -36,3 +36,7 @@
   - [x] Simplificar a conversão entre objetos e JSON
   - [x] Utilizar a função map() para converter uma lista
   
+  ## 📚 O que foi aplicado na parte de Flutter com web API - Comunicação HTTP:
+
+- [x] Implementando um dialog
+- [x] Evitar o problema de envio de BuildContext diferentes
